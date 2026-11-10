@@ -1,0 +1,245 @@
+
+/* GENERAL DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #160d24;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #211333;
+}
+
+.logo {
+    color: pink;
+    font-size: 27px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* HOME SECTION */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #160d24, #42205c);
+}
+
+.hero-content h3 {
+    font-size: 25px;
+    color: #ff77c8;
+}
+
+.hero-content h1 {
+    font-size: 75px;
+    color: white;
+    margin: 10px 0;
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    color: #c994ff;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 550px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #ff77c8;
+    color: #211333;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c994ff;
+    transform: scale(1.05);
+}
+
+/* ALL SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    color: #ff77c8;
+    margin-bottom: 40px;
+}
+
+/* ABOUT SECTION */
+#about {
+    background: #211333;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: #302044;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(255,119,200,0.1);
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* SKILLS AND PROJECTS */
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #302044;
+    width: 280px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #754a91;
+    transition: 0.3s;
+    gap: 25px;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(255,119,200,0.3);
+    border-color: #ff77c8;
+    gap: 25px;
+
+}
+
+.card h3 {
+    color: #ff77c8;
+    font-size: 21px;
+    margin-bottom: 15px;
+    gap: 25px;
+
+}
+
+.class {
+    gap: 25px;
+}
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* PROJECTS SECTION */
+#projects {
+    background: #211333;
+}
+
+/* CONTACT SECTION */
+#contact {
+    text-align: center;
+}
+
+#contact .content {
+    background: #302044;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #211333;
+    text-align: center;
+    padding: 25px;
+    color: #ff77c8;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 50px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
